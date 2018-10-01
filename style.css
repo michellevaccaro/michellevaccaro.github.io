@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* 
+
 @keyframes menu-anim-fade-in {
   		from {
     opacity: 0;
@@ -9,9 +9,9 @@
   }
 } 
 
-.fade-in {
+.fade {
   animation: menu-anim-fade-in 0.5s;
-} */
+}
 
 	ul {
 		list-style: none;
@@ -37,11 +37,11 @@
 	#menu1 {
 		margin-left:10px;
 	}
-	#list2 {
-		margin-left:90px;
+	#menu2 {
+		margin-left:100px;
 	}
-	#list3 {
-		margin-left:90px;
+	#menu3 {
+		margin-left:190px;
 	}
 	.menubox * {
     	border-right: solid blue 2px;
