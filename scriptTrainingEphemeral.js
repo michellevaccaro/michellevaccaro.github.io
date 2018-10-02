@@ -229,7 +229,7 @@ function updatePrompt() {
 		let t = document.createTextNode('Next');
 		next.appendChild(t);
 		next.title = "Next";
-		next.href = "surveyEphemeral.html";
+		next.href = "Ephemeral.html";
 		document.body.appendChild(next);
 	}
 }
