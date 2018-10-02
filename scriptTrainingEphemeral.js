@@ -241,18 +241,18 @@ function getTimeStamp() {
 
 function clickListener(e) {  
     userClicks += 1;
-    console.log("Click " + userClicks);
+    //console.log("Click " + userClicks);
     var clickedElement=(window.event)
                         ? window.event.srcElement
                         : e.target,
     tags=document.getElementsByTagName(clickedElement.tagName);
     // Logging
-    if(clickedElement.tagName !== 'HTML') {
+    /*if(clickedElement.tagName !== 'HTML') {
         console.log(clickedElement.innerHTML + ':  ' + getTimeStamp());
     }
     else {
         console.log('Blank :  ' + getTimeStamp());
-    }
+    }*/
     
     if(clickedElement.tagName !== 'HTML') {
         // Update Values
@@ -283,14 +283,14 @@ function clickListener(e) {
         userItem = userItem.substring(0, userItem.length-1);
         itemIndex = wordList.indexOf(itemName);
         // console.log(itemIndex, predictions);
-        if(predictions.indexOf(itemIndex) !== -1) {
+        /*if(predictions.indexOf(itemIndex) !== -1) {
             console.log("No Fade (predicted)");
         }
         else {
             console.log("Fade (not predicted)");
-        }
+        }*/
         if(userItem === itemName) {
-            console.log("Correct");
+            //console.log("Correct");
             userItem = "";
             closeMenu();
             updatePredictions();
