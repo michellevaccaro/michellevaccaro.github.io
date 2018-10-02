@@ -213,15 +213,24 @@ function updatePrompt() {
 	// otherwise you're done with this task block, change layout to reflect that
 	else {
             document.getElementById("prompt").innerHTML = "Task Completed!";
-            text = document.createTextNode("Please press Next to move on to the next part of the study.");
-            document.body.appendChild(text);
-            
-            let next = document.createElement('a');
-            let t = document.createTextNode('Next');
-            next.appendChild(t);
-            next.title = "Next";
-            next.href = "surveyEphemeral.html";
-            document.body.appendChild(next);
+		let par = document.createElement("p");
+		let node = document.createTextNode("Please press Next to move on to the next part of the study.");
+		par.appendChild(node);
+		let div = document.getElementById("div1");
+		div.appendChild(par);
+		let buttons = document.getElementById("buttons");
+		let but1 = document.getElementById("button1");
+		let but2 = document.getElementById("button2");
+		let but3 = document.getElementById("button3");
+		buttons.removeChild(but1);
+		buttons.removeChild(but2);
+		buttons.removeChild(but3);
+		let next = document.createElement('a');
+		let t = document.createTextNode('Next');
+		next.appendChild(t);
+		next.title = "Next";
+		next.href = "surveyEphemeral.html";
+		document.body.appendChild(next);
 	}
 }
 
