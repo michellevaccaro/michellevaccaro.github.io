@@ -124,12 +124,12 @@ function clickListener(e) {
                         : e.target,
     tags=document.getElementsByTagName(clickedElement.tagName);
     // Logging
-    if(clickedElement.tagName !== 'HTML') {
+    /*if(clickedElement.tagName !== 'HTML') {
         console.log(clickedElement.innerHTML + ':  ' + getTimeStamp());
     }
     else {
         console.log('Blank :  ' + getTimeStamp());
-    }
+    }*/
     
     if(clickedElement.tagName !== 'HTML') {
         // Update Values
@@ -141,9 +141,9 @@ function clickListener(e) {
         }
         
         // Check Values
-        console.log(userItem.length, itemName.length);
+        //console.log(userItem.length, itemName.length);
         if(userItem === itemName + " ") {
-            console.log("Correct");
+            //console.log("Correct");
             closeMenu();
             updatePrompt();
         }
