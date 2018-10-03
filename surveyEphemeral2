@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Study</title>
+<link rel="stylesheet" href="landingPageStyle.css">
+<script src='main.js'></script>
+</head>
+<body>
+<h3> Survey </h3> 
+<h4>Please complete the following questionnaire. Once you have completed the questionnaire, please return to this page.</h4>
+<a href="https://goo.gl/forms/41TBeTwX6KqiLdvt1" target="_blank">Menu Questionnaire</a>
+<h4 id="hide"> Press next to continue, only after completing the Google Form questionnaire. </h4>
+<div id="button"><a href="end.html">Next</a></div>
+</html>
