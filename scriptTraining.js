@@ -92,7 +92,7 @@ function updatePrompt() {
 	else {
 		document.getElementById("prompt").innerHTML = "Task Completed!";
 		let par = document.createElement("p");
-		let node = document.createTextNode("Please press Next to move on to the next part of the study.");
+		let node = document.createTextNode("Please press Next to move on to the next part of the study. In that section you will apply the same principle for a longer task block.");
 		par.appendChild(node);
 		let div = document.getElementById("div1");
 		div.appendChild(par);
