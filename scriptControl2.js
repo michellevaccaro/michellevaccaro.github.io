@@ -107,7 +107,7 @@ function updatePrompt() {
 		let t = document.createTextNode('Next');
 		next.appendChild(t);
 		next.title = "Next";
-		next.href = "surveyControl2.html";
+		next.href = "surveyControl.html";
 		document.body.appendChild(next);
 	}
 }
